@@ -1,0 +1,85 @@
+.card {
+    height: 100%;
+}
+
+.card-img-top {
+    object-fit: cover;
+    height: 200px; /* Sesuaikan dengan ukuran maksimal yang diinginkan */
+}
+/* Ikon Notifikasi */
+.notification-icon {
+    position: relative;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .notification-count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 0.8rem;
+  }
+  
+  /* Kotak Notifikasi */
+  .notification-box {
+    position: absolute;
+    top: 40px; /* Jarak dari ikon notifikasi */
+    right: -100px; /* Posisi horizontal */
+    width: 300px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: none; /* Sembunyikan secara default */
+    z-index: 1000;
+  }
+  
+  .notification-header {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .notification-header h5 {
+    margin: 0;
+    font-size: 1rem;
+  }
+  
+  .notification-header button {
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+  
+  .notification-list {
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  
+  .notification-item {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .notification-item:last-child {
+    border-bottom: none;
+  }
+  
+  .notification-item p {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+  
+  .notification-item small {
+    color: #888;
+    font-size: 0.8rem;
+  }
